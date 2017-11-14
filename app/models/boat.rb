@@ -31,6 +31,6 @@ class Boat < ActiveRecord::Base
     Boat.joins(:classifications).where("classifications.name = 'Sailboat'")
   end
 
-  def
+
 
 end
