@@ -21,4 +21,8 @@ class Boat < ActiveRecord::Base
     Boat.order('name DESC').limit(3)
   end
 
+  def self.without_a_captain
+    binding.pry
+  end
+
 end
