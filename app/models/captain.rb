@@ -5,4 +5,4 @@ class Captain < ActiveRecord::Base
     binding.pry
   end
 end
-Captain.joins(:classifcats).where("boats.name = 'Catamaran'")
+Captain.joins(:classifications).where("boats.name = 'Catamaran'")
