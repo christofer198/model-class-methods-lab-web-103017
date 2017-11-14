@@ -14,7 +14,7 @@ class Boat < ActiveRecord::Base
   end
 
   def self.ship
-    Boat.select(:name).where("length>20")
+    Boat.select(:name).where("length>=20")
   end
 
 end
