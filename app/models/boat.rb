@@ -28,7 +28,7 @@ class Boat < ActiveRecord::Base
 
   def self.sailboats
     #binding.pry
-    Boat.join(:classifications).where("classifications.name = 'Sailboat'")
+    Boat.joins(:classifications).where("classifications.name = 'Sailboat'")
   end
 
   def
