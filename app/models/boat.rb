@@ -22,7 +22,7 @@ class Boat < ActiveRecord::Base
   end
 
   def self.without_a_captain
-    binding.pry
+    #binding.pry
     Boat.where(:captain_id => nil)
   end
 
