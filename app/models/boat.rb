@@ -27,7 +27,7 @@ class Boat < ActiveRecord::Base
   end
 
   def self.sailboats
-    binding.pry
+    #binding.pry
     Classification.where(:name => 'Sailboat')
   end
 
